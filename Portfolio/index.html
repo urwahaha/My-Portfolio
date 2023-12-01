@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1bd9c29051.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo" alt="Discription" width="700" height="auto"> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Mechanical Engineer</p>
+            <h1>Hi, I'm <span>Urwa Tul Wuska</span> <br> from Pakistan</h1>
+        </div>
+    </div>
+</div>
+<!-- --------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/2.png" alt="Discription" width="500" height="auto"> 
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Urwa Tul Wuska, a passionate and dedicated Mechanical Engineering student currently in my 5th semester. My academic journey has been fueled by a deep fascination with the intricate world of machines and a relentless curiosity to understand and innovate within the realm of mechanical systems.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links"onclick="opentab('projects')">Projects</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Modeling</span><br>Auto-Desk CAD <br>Auto-Desk Inventor <br> Solid Works</li>
+                        <li><span>Simulation</span><br>Ansys <br>Abacus</li>
+                        <li><span>Computation</span><br>Matlab <br> Python </li>
+                        <li><span>Project Management</span><br>Primavera P6 Professional</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br> Working as a Researcher in MED, UET (Main campus).</li>
+                        <li><span>July 1st - Sepetember 1st, 2022</span><br> Worked as an intern at Brand Inn.</li>
+                        <li><span>July 7th - September-7Th,2019</span><br> Worked as an intern at Pakistan Railways.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Studing BSc. Mechanical Engineering at UET (Main campus).</li>
+                        <li><span>2018 - 2021</span><br>Done Diploma of Associate Engineer (DAE) Mechanical Technology from GCT (Railway Road, Lahore).</li>
+                        <li><span>2016 - 2018</span><br>Done Matriculation from Unique Solutions School (Lahore). </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Project 1</span><br> Made Worm and worm wheel system in college.</li>
+                        <li><span>Project 2</span><br> Made CNC laser engraver in college.</li>
+                        <li><span>Project 3</span><br> Made CNC 3-D printing machine as FYDP in college.</li>
+                        <li><span>Project 4</span><br> Made Agri-Drone as SDP in university. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------Services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-compass-drafting"></i>
+                <h2>Modeling</h2>
+                <p>Emphasizing expertise in 3D CAD modeling, product design, simulation, and analysis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wind"></i>
+                <h2>Simulation</h2>
+                <p>Proficient in structural analysis, thermal simulations, and fluid dynamics, I leverage ANSYS tools for comprehensive multiphysics simulations.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Computation</h2>
+                <p>Proficient in algorithm development, data analysis, and numerical simulations.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------Portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/A.png" alt="Discription" width="900" height="auto">
+                <div class="layer">
+                    <h3>Solid Works</h3>
+                    <p>"SolidWorks is a leading CAD software, empowering designers with intuitive 3D modeling, seamless collaboration, and advanced simulation tools for efficient product development."</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>  
+            </div>
+            <div class="work">
+                <img src="Images/B.png" alt="Discription" width="900" height="auto">
+                <div class="layer">
+                    <h3>Matlab</h3>
+                    <p>"Matlab: A versatile numerical computing environment, empowering engineers and scientists with advanced tools for data analysis, modeling, and algorithm development."</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/C.png" alt="Discription" width="900" height="auto">
+                <div class="layer">
+                    <h3>Primavera P6 Professional</h3>
+                    <p>"Primavera P6 Professional: Premier project management software for seamless planning, scheduling, and execution, fostering precision and collaboration in project delivery."</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -----------Contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> urwah001@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +923091000206</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/muhammad-urwa-tul-wuska-5a5b16235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100076508477487&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/urwahahahah?igshid=M2RkZGJiMzhjOQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://discordapp.com/users/1004210177794388048"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="Images/My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>    
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Urwa. <i class="fa-solid fa-user"></i> </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyQnaylglMmqGQ1cnoS0iHsUzn0CzzbstBUzRe0BbIBrRH7YnEzHQfx7Hz1EITz-4J9/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
